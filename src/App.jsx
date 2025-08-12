@@ -8,26 +8,31 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
+      <header className="logo-container">
+        <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
-      </div>
-      <h1>Halo Fikar</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Itungan {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+      </header>
+
+      <main>
+        <h1>🔥 Halo Fikar, Selamat Datang di Dunia React + Vite! 🔥</h1>
+
+        <div className="card">
+          <button onClick={() => setCount((prev) => prev + 1)}>
+            🚀 Klik Aku! Count: {count}
+          </button>
+          <p>
+            Ubah <code>src/App.jsx</code> & simpan buat lihat keajaiban HMR ⚡
+          </p>
+        </div>
+
+        <p className="read-the-docs">
+          ⬆️ Klik logo Vite & React buat belajar lebih lanjut. Let's gooo! 😎
         </p>
-      </div>
-      <p className="read-the-docs">
-        Klik di Logo Vite dan React buat pelajari lebih lanjut cuyyyy
-      </p>
+      </main>
     </>
   )
 }
