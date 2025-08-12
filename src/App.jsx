@@ -19,7 +19,7 @@ function App() {
       <h1>Halo Fikar</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          Itungan nya {count}
+          Itungan {count}
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
